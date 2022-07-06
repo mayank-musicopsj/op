@@ -37,11 +37,11 @@ async def start_(client: Client, message: Message):
                         "❣️ ᴏᴡɴᴇʀ ❣️", url=f"https://t.me/{me}"
                     ),
                     InlineKeyboardButton(
-                        "💥 sᴜᴘᴘᴏʀᴛ 💥", url=f"https://t.me/AARU_SUPPORT"
+                        "💥 sᴜᴘᴘᴏʀᴛ 💥", url=f"https://t.me/love_birds_group"
                     )
                 ],[
                     InlineKeyboardButton(
-                        "🌹ᴄʜᴀɴɴᴇʟ🌹", url="https://t.me/AARU_BOTS_ZONE"
+                        "🌹ᴄʜᴀɴɴᴇʟ🌹", url="https://t.me/love_birds_group"
                     ),
                     InlineKeyboardButton(
                         "😎 ᴅᴇᴠᴇʟᴏᴘᴇʀ 😎", url="https://t.me/BANNA_XD"
