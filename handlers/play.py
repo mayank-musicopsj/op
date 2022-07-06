@@ -138,7 +138,7 @@ async def play(_, message: Message):
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"<i>❰𝗔𝗮𝗿𝘂 🇽  𝗥𝗼𝗯𝗼𝘁❱ 𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 𝗨𝘀𝗲𝗿𝗕𝗼𝘁 𝗜𝘀 𝗡𝗼𝘁 𝗜𝗻 𝗧𝗵𝗶𝘀 𝗖𝗵𝗮𝘁' 𝗔𝘀𝗸 𝗔𝗱𝗺𝗶𝗻 𝗧𝗼 𝗦𝗲𝗻𝗱 /𝗽𝗹𝗮𝘆 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗙𝗼𝗿 𝗙𝗶𝗿𝘀𝘁 𝗧𝗶𝗺𝗲 𝗧𝗼 𝗔𝗱𝗱 𝗜𝘁 😎🤟</i>"
+            f"<i>❰𝗔𝗮𝗿𝘂 🇽  𝗥𝗼𝗯𝗼𝘁❱ 𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 𝗨𝘀𝗲𝗿𝗕𝗼𝘁 𝗜𝘀 𝗡𝗼𝘁 𝗜𝗻 𝗧𝗵𝗶𝘀 𝗖𝗵𝗮𝘁' 𝗔𝘀𝗸 𝗔𝗱𝗺𝗶𝗻 𝗧𝗼 𝗦𝗲𝗻𝗱 /𝗝𝗼𝗶𝗻 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗙𝗼𝗿 𝗙𝗶𝗿𝘀𝘁 𝗧𝗶𝗺𝗲 𝗧𝗼 𝗔𝗱𝗱 𝗜𝘁 😎🤟</i>"
         )
         return
 
@@ -166,9 +166,9 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="🌹𝐂𝐇𝐀𝐍𝐍𝐄𝐋🌹", url=f"https://t.me/AARU_BOTS_ZONE"
+                        text="🌹𝐎𝐖𝐍𝐄𝐑🌹", url=f"https://t.me/BANNA_XD"
                     ),
-                    InlineKeyboardButton(text="💥𝐆𝐑𝐎𝐔𝐏💥", url=f"https://t.me/AARU_SUPPORT"),
+                    InlineKeyboardButton(text="💥𝐆𝐑𝐎𝐔𝐏💥", url=f"https://t.me/love_birds_group"),
                 ]
             ]
         )
@@ -205,10 +205,10 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="🌹𝐂𝐇𝐀𝐍𝐍𝐄𝐋🌹", url=f"https://t.me/AARU_BOTS_ZONE"
+                            text="🌹𝐎𝐖𝐍𝐄𝐑🌹", url=f"https://t.me/BANNA_XD"
                         ),
                         InlineKeyboardButton(
-                            text="💥𝐆𝐑𝐎𝐔𝐏💥", url=f"https://t.me/AARU_SUPPORT"
+                            text="💥𝐆𝐑𝐎𝐔𝐏💥", url=f"https://t.me/love_birds_group"
                         ),
                     ]
                 ]
@@ -222,10 +222,10 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="🌹𝐂𝐇𝐀𝐍𝐍𝐄𝐋🌹", url=f"https://t.me/AARU_BOTS_ZONE"
+                            text="🌹𝐎𝐖𝐍𝐄𝐑🌹", url=f"https://t.me/BANNA_XD"
                         ),
                         InlineKeyboardButton(
-                            text="💥𝐆𝐑𝐎𝐔𝐏💥", url=f"https://t.me/AARU_SUPPORT"
+                            text="💥𝐆𝐑𝐎𝐔𝐏💥", url=f"https://t.me/love_birds_group"
                         ),
                     ]
                 ]
@@ -274,9 +274,9 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="🌹𝐂𝐇𝐀𝐍𝐍𝐄𝐋🌹", url=f"https://t.me/AARU_BOTS_ZONE"
+                        text="🌹𝐎𝐖𝐍𝐄𝐑🌹", url=f"https://t.me/BANNA_XD"
                     ),
-                    InlineKeyboardButton(text="💥𝐆𝐑𝐎𝐔𝐏💥", url=f"https://t.me/AARU_SUPPORT"),
+                    InlineKeyboardButton(text="💥𝐆𝐑𝐎𝐔𝐏💥", url=f"https://t.me/love_birds_group"),
                 ]
             ]
         )
