@@ -63,11 +63,11 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     async with aiohttp.ClientSession() as session:
         async with session.get(thumbnail) as resp:
             if resp.status == 200:
-                f = await aiofiles.open("background.png", mode="wb")
+                f = await aiofiles.open(""https://i.ytimg.com/vi/{data['id']}/hqdefault.jpg"", mode="wb")
                 await f.write(await resp.read())
                 await f.close()
 
-    image1 = Image.open("./background.png")
+    image1 = Image.open("https://i.ytimg.com/vi/{data['id']}/hqdefault.jpg")
     image2 = Image.open("etc/foreground.png")
     image3 = changeImageSize(1280, 720, image1)
     image4 = changeImageSize(1280, 720, image2)
@@ -88,7 +88,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     )
     img.save("final.png")
     os.remove("temp.png")
-    os.remove("background.png")
+    os.remove("https://i.ytimg.com/vi/{data['id']}/hqdefault.jpg")
 
 
 @Client.on_message(
@@ -100,7 +100,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 )
 async def play(_, message: Message):
 
-    lel = await message.reply("🔎")
+    lel = await message.reply("🔥")
 
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -158,7 +158,7 @@ async def play(_, message: Message):
         file_name = get_file_name(audio)
         title = file_name
         thumb_name = "https://telegra.ph/file/45dbab70385b8dbdf6dc9.jpg"
-        thumbnail = thumb_name
+        thumbnail = f"https://i.ytimg.com/vi/{data['id']}/hqdefault.jpg"
         duration = round(audio.duration / 60)
         views = "Locally added"
 
