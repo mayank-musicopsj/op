@@ -203,15 +203,16 @@ async def play(_, message: Message):
                 secmul *= 60
 
             keyboard = InlineKeyboardMarkup(
-                  [
-                      InlineKeyboardButton("▢", callback_data="cbstop"),
-                      InlineKeyboardButton("II", callback_data="cbpause"),
-                      InlineKeyboardButton("‣‣I", "skip"),
-                      InlineKeyboardButton("▷", callback_data="cbresume"),
-                  ],[
-                      InlineKeyboardButton(text="🥂 ɢʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
-                      InlineKeyboardButton(text="🍷 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                  ]
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="🌹𝐎𝐖𝐍𝐄𝐑🌹", url=f"https://t.me/BANNA_XD"
+                        ),
+                        InlineKeyboardButton(
+                            text="💥𝐆𝐑𝐎𝐔𝐏💥", url=f"https://t.me/love_birds_group"
+                        ),
+                    ]
+                ]
             )
         except Exception as e:
             title = "NaN"
@@ -219,15 +220,16 @@ async def play(_, message: Message):
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
-                  [
-                      InlineKeyboardButton("▢", callback_data="cbstop"),
-                      InlineKeyboardButton("II", callback_data="cbpause"),
-                      InlineKeyboardButton("‣‣I", "skip"),
-                      InlineKeyboardButton("▷", callback_data="cbresume"),
-                  ],[
-                      InlineKeyboardButton(text="🥂 ɢʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
-                      InlineKeyboardButton(text="🍷 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                  ]
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="🌹𝐎𝐖𝐍𝐄𝐑🌹", url=f"https://t.me/BANNA_XD"
+                        ),
+                        InlineKeyboardButton(
+                            text="💥𝐆𝐑𝐎𝐔𝐏💥", url=f"https://t.me/love_birds_group"
+                        ),
+                    ]
+                ]
             )
         if (dur / 60) > DURATION_LIMIT:
             await lel.edit(
@@ -270,15 +272,14 @@ async def play(_, message: Message):
             return
 
         keyboard = InlineKeyboardMarkup(
-                  [
-                      InlineKeyboardButton("▢", callback_data="cbstop"),
-                      InlineKeyboardButton("II", callback_data="cbpause"),
-                      InlineKeyboardButton("‣‣I", "skip"),
-                      InlineKeyboardButton("▷", callback_data="cbresume"),
-                  ],[
-                      InlineKeyboardButton(text="🥂 ɢʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
-                      InlineKeyboardButton(text="🍷 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                  ]
+            [
+                [
+                    InlineKeyboardButton(
+                        text="🌹𝐎𝐖𝐍𝐄𝐑🌹", url=f"https://t.me/BANNA_XD"
+                    ),
+                    InlineKeyboardButton(text="💥𝐆𝐑𝐎𝐔𝐏💥", url=f"https://t.me/love_birds_group"),
+                ]
+            ]
         )
 
         if (dur / 60) > DURATION_LIMIT:

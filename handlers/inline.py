@@ -1,62 +1,51 @@
-""" inline section button """
+from pyrogram import Client, errors
+from pyrogram.types import InlineQuery, InlineQueryResultArticle, InputTextMessageContent
 
-from pyrogram.types import (
-  CallbackQuery,
-  InlineKeyboardButton,
-  InlineKeyboardMarkup,
-  Message,
-)
-from config import GROUP_SUPPORT, UPDATES_CHANNEL
-
-def stream_markup(user_id):
-  buttons = [
-    [
-      InlineKeyboardButton(text="• ᴍᴇɴᴜ", callback_data=f'cbmenu | {user_id}'),
-      InlineKeyboardButton(text="• ᴄʟᴏsᴇ", callback_data=f'cls'),
-    ],
-    [
-      InlineKeyboardButton(text="🥂 ɢʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"),
-      InlineKeyboardButton(text="🍷 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
-    ],
-  ]
-  return buttons
+from youtubesearchpython import VideosSearch
 
 
-def menu_markup(user_id):
-  buttons = [
-    [
-      InlineKeyboardButton(text="▢", callback_data=f'cbstop | {user_id}'),
-      InlineKeyboardButton(text="II", callback_data=f'cbpause | {user_id}'),
-      InlineKeyboardButton(text="▷", callback_data=f'cbresume | {user_id}'),
-    ],
-    [
-      InlineKeyboardButton(text="• ᴍᴜᴛᴇ •", callback_data=f'cbmute | {user_id}'),
-      InlineKeyboardButton(text="• ᴜɴᴍᴜᴛᴇ •", callback_data=f'cbunmute | {user_id}'),
-    ],
-    [
-      InlineKeyboardButton(text="• ᴄʟᴏsᴇ •", callback_data='cls'),
-    ]
-  ]
-  return buttons
+@Client.on_inline_query()
+async def inline(client: Client, query: InlineQuery):
+    answers = []
+    search_query = query.query.lower().strip().rstrip()
 
+    if search_query == "":
+        await client.answer_inline_query(
+            query.id,
+            results=answers,
+            switch_pm_text="ᴛʏᴩᴇ ᴀ ʏᴏᴜᴛᴜʙᴇ ᴠɪᴅᴇᴏ ɴᴀᴍᴇ...",
+            switch_pm_parameter="help",
+            cache_time=0
+        )
+    else:
+        search = VideosSearch(search_query, limit=50)
 
-close_mark = InlineKeyboardMarkup(
-  [
-    [
-      InlineKeyboardButton(
-        "• ᴄʟᴏsᴇ •", callback_data="cls"
-      )
-    ]
-  ]
-)
+        for result in search.result()["result"]:
+            answers.append(
+                InlineQueryResultArticle(
+                    title=result["title"],
+                    description="{}, {} views.".format(
+                        result["duration"],
+                        result["viewCount"]["short"]
+                    ),
+                    input_message_content=InputTextMessageContent(
+                        "https://www.youtube.com/watch?v={}".format(
+                            result["id"]
+                        )
+                    ),
+                    thumb_url=result["thumbnails"][0]["url"]
+                )
+            )
 
-
-back_mark = InlineKeyboardMarkup(
-  [
-    [
-      InlineKeyboardButton(
-        "• ɢᴏ ʙᴀᴄᴋ •", callback_data="cbmenu"
-      )
-    ]
-  ]
-)
+        try:
+            await query.answer(
+                results=answers,
+                cache_time=0
+            )
+        except errors.QueryIdInvalid:
+            await query.answer(
+                results=answers,
+                cache_time=0,
+                switch_pm_text="ᴇʀʀᴏʀ : sᴇᴀʀᴄʜ ᴛɪᴍᴇᴅ ᴏᴜᴛ ",
+                switch_pm_parameter="",
+            )
