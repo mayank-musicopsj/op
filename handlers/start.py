@@ -33,7 +33,7 @@ async def start_(client: Client, message: Message):
                        ),
                 ],[
                     InlineKeyboardButton(
-                        " ❣ᴏᴡɴᴇʀ ❣ ", url=f"https://t.me/{me}"
+                        "•sᴏᴜʀᴄᴇ•", url=f"https://github.com/BANNA-XD143/Aaru_Music"
                        ),
                     InlineKeyboardButton(
                         "•sᴜᴘᴘᴏʀᴛ•", url=f"https://t.me/AARU_SUPPORT"
