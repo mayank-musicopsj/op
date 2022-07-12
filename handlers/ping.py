@@ -50,7 +50,7 @@ async def help(client: Client, message: Message):
     end = datetime.now()
     resp = (end - start).microseconds / 1000
     rahul = await message.reply_photo(
-        photo=f"https://telegra.ph/file/3f9d00dae332a4aeb763d.jpg",
+        photo=f"https://telegra.ph/file/108d62f906d2a85101b6b.jpg",
         caption="🍑 ᴩɪɴɢɪɴɢ... 🍑",
     )
     await rahul.edit_text(
