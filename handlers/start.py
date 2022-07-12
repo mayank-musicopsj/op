@@ -32,21 +32,21 @@ async def start_(client: Client, message: Message):
                     InlineKeyboardButton(
                         "•ᴀᴅᴅ ᴍᴇ ᴍʀᴇɪ ᴊᴀᴀɴ​•", url=f"https://t.me/{bu}?startgroup=true"
                        ),
-                  ],[
+                ],[
                     InlineKeyboardButton(
                         " ❣ᴏᴡɴᴇʀ ❣ ", url=f"https://t.me/{me}"
                        ),
                     InlineKeyboardButton(
                         "•sᴜᴘᴘᴏʀᴛ•", url=f"https://t.me/AARU_SUPPORT"
                        )
-                  ],[
+                ],[
                     InlineKeyboardButton(
                         "•ᴄʜᴀɴɴᴇʟ•", url="https://t.me/MISS_AARU_143"
                        ),
                     InlineKeyboardButton(
                         "•ᴅᴇᴠᴇʟᴏᴘᴇʀ•", url="https://t.me/BANNA_XD"
                        )
-                  ],[
+                ],[
                     InlineKeyboardButton(
                         " •ɢʀᴏᴜᴘ• ",url="https//t.me/LOVE_BIRDS_123
                        )
