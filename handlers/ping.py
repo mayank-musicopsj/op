@@ -72,6 +72,7 @@ async def help(client: Client, message: Message):
                     InlineKeyboardButton(
                         "•ᴄʜᴀᴛᴛɪɴɢ ɢʀᴏᴜᴘ•"url=f"https://t.me/LOOVE_BIRDS_123"
                     )
+                   ]
             ]
         ),
     )
