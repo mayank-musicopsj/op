@@ -51,10 +51,10 @@ async def help(client: Client, message: Message):
     resp = (end - start).microseconds / 1000
     rahul = await message.reply_photo(
         photo=f"https://telegra.ph/file/108d62f906d2a85101b6b.jpg",
-        caption="🍑 ᴩɪɴɢɪɴɢ... 🍑",
+        caption="🥀 ᴩɪɴɢɪɴɢ... 🥀",
     )
     await rahul.edit_text(
-        f"""<b> ᴩᴏɴɢ ʙᴀʙʏ ! 🍑</b>\n  🏓 `{resp} ᴍs`\n\n<b><u>{BOT_NAME} sʏsᴛᴇᴍ sᴛᴀᴛs:</u></b>\n\n• ᴜᴩᴛɪᴍᴇ : {bot_uptime}\n• ᴄᴩᴜ : {cpu}%\n• ᴅɪsᴋ : {disk}%\n• ʀᴀᴍ : {mem}""",
+        f"""<b> ᴩᴏɴɢ ʙᴀʙʏ ! 🖤</b>\n  😈 `{resp} ᴍs`\n\n<b><u>{BOT_NAME} sʏsᴛᴇᴍ sᴛᴀᴛs:</u></b>\n\n• ᴜᴩᴛɪᴍᴇ : {bot_uptime}\n• ᴄᴩᴜ : {cpu}%\n• ᴅɪsᴋ : {disk}%\n• ʀᴀᴍ : {mem}""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
