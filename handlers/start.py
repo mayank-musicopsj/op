@@ -35,23 +35,23 @@ async def start_(client: Client, message: Message):
                   ],[
                     InlineKeyboardButton(
                         " ❣ᴏᴡɴᴇʀ ❣ ", url=f"https://t.me/{me}"
-                    ),
+                       ),
                     InlineKeyboardButton(
                         "•sᴜᴘᴘᴏʀᴛ•", url=f"https://t.me/AARU_SUPPORT"
-                    )
+                       )
                 ],[
                     InlineKeyboardButton(
                         "•ᴄʜᴀɴɴᴇʟ•", url="https://t.me/MISS_AARU_143"
-                    ),
+                       ),
                     InlineKeyboardButton(
                         "•ᴅᴇᴠᴇʟᴏᴘᴇʀ•", url="https://t.me/BANNA_XD"
-                    )
+                       )
                ],[
-                    )
                     InlineKeyboardButton(
                         " •ᴄʜᴀᴛᴛɪɴɢ ɢʀᴏᴜᴘ• ",url="https//t.me/LOVE_BIRDS_123
-                    )
-               ]
+                       )
+                ]        
+           ]
        ),
     )
 

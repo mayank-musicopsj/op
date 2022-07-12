@@ -172,11 +172,11 @@ async def play(_, message: Message):
                 ],[
                     InlineKeyboardButton(
                        text="•ᴏᴡɴᴇʀ•",url=f"https://t.me/BANNA_XD"
-                   ),
-                   InlineKeyboardButton(
+                    ),
+                    InlineKeyboardButton(
                       text="•ɢʀᴏᴜᴘ•",url=f"https://t.me./LOVE_BIRDS_123"
-                  ),
-               ]   
+                    ),
+                 ]   
             ]
         )
 
@@ -222,8 +222,8 @@ async def play(_, message: Message):
                            InlineKeyboardButton(
                               text="•ɢʀᴏᴜᴘ•", url=f"https://t.me./LOVE_BIRDS_123"
                           ),
-                    ]
-               ]
+                     ]
+                ]
             )
         except Exception as e:
             title = "NaN"
@@ -237,13 +237,13 @@ async def play(_, message: Message):
                             text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/MISS_AARU_143"
                         ),
                         InlineKeyboardButton(text="•sᴜᴘᴘᴏʀᴛ•", url=f"https://t.me/love_birds_group"),
-                    ],[    
+                   ],[    
                         InlineKeyboardButton(
                             text="•ᴏᴡɴᴇʀ", url=f"https://t.me/BANNA_XD"
                         ),
                         InlineKeyboardButton(
                            text="•ɢʀᴏᴜᴘ•," url=f"https://t.me/LOVE_BIRDS_123"
-                       ),
+                        ),
                     ]
                 ]
             )
@@ -294,7 +294,7 @@ async def play(_, message: Message):
                         text="•ᴄʜᴀɴɴᴇʟ•", url=f"https://t.me/MISS_AARU_143"
                     ),
                     InlineKeyboardButton(text="•sᴜᴘᴘᴏʀᴛ•", url=f"https://t.me/AARU_SUPPORT"),
-                ],[
+               ],[
                     InlineKeyboardButton(
                        text="•ᴏᴡɴᴇʀ", url=f"https://t.me/BANNA_XD"
                     ),
