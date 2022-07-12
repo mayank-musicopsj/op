@@ -9,7 +9,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 @Client.on_message(command("start") & filters.private & ~filters.group & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.delete()
-    await message.reply_sticker("CAACAgUAAxkBAAPLYqsvOXrTAjFEQ_JYoxVQO2LPkDMAAgkGAAKyxVhVulwgGjIafHUkBA")
+    await message.reply_sticker()
     await message.reply_photo(
         photo=f"https://telegra.ph/file/336544dbebf58dadb1e6f.jpg",
         caption=f"""**━━━━━━━━━━━━━━━━━━
@@ -30,23 +30,28 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🥺 ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ​ 🥺", url=f"https://t.me/{bu}?startgroup=true"
+                        "•ᴀᴅᴅ ᴍᴇ ᴍʀᴇɪ ᴊᴀᴀɴ​•", url=f"https://t.me/{bu}?startgroup=true"
                        ),
                   ],[
                     InlineKeyboardButton(
-                        "❣️ ᴏᴡɴᴇʀ ❣️", url=f"https://t.me/{me}"
+                        " ❣ᴏᴡɴᴇʀ ❣ ", url=f"https://t.me/{me}"
                     ),
                     InlineKeyboardButton(
-                        "💥 sᴜᴘᴘᴏʀᴛ 💥", url=f"https://t.me/love_birds_group"
+                        "•sᴜᴘᴘᴏʀᴛ•", url=f"https://t.me/AARU_SUPPORT"
                     )
                 ],[
                     InlineKeyboardButton(
-                        "🌹ᴄʜᴀɴɴᴇʟ🌹", url="https://t.me/love_birds_group"
+                        "•ᴄʜᴀɴɴᴇʟ•", url="https://t.me/MISS_AARU_143"
                     ),
                     InlineKeyboardButton(
-                        "😎 ᴅᴇᴠᴇʟᴏᴘᴇʀ 😎", url="https://t.me/BANNA_XD"
-                    )]
-            ]
+                        "•ᴅᴇᴠᴇʟᴏᴘᴇʀ•", url="https://t.me/BANNA_XD"
+                    )
+               ],[
+                    )
+                    InlineKeyboardButton(
+                        " •ᴄʜᴀᴛᴛɪɴɢ ɢʀᴏᴜᴘ• ",url="https//t.me/LOVE_BIRDS_123
+                    )
+               ]
        ),
     )
 

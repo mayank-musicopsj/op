@@ -49,7 +49,7 @@ async def help(client: Client, message: Message):
     start = datetime.now()
     end = datetime.now()
     resp = (end - start).microseconds / 1000
-    await message.reply_sticker("CAACAgUAAxkBAAPLYqsvOXrTAjFEQ_JYoxVQO2LPkDMAAgkGAAKyxVhVulwgGjIafHUkBA")
+    await message.reply_sticker()
     rahul = await message.reply_photo(
         photo=f"https://telegra.ph/file/3f9d00dae332a4aeb763d.jpg",
         caption="🍑 ᴩɪɴɢɪɴɢ... 🍑",
@@ -60,12 +60,18 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "💖 sᴜᴘᴘᴏʀᴛ 💖", url=f"https://t.me/AARU_SUPPORT"
+                        "•sᴜᴘᴘᴏʀᴛ•", url=f"https://t.me/AARU_SUPPORT"
                     ),
                     InlineKeyboardButton(
-                        "🙄 sᴏᴜʀᴄᴇ 🙄", url="https://te.legra.ph/file/1630b6ccf7772d64cf86d.mp4"
+                        "•sᴏᴜʀᴄᴇ•", url="https://github.com/BANNA-XD143/Aaru_Music"
                     )
-                ]
+                ],[
+                    InlineKeyboardButton(
+                        "•ᴏᴡɴᴇʀ•",url=f"https://t.me/BANNA_XD
+                    ),
+                    InlineKeyboardButton(
+                        "•ᴄʜᴀᴛᴛɪɴɢ ɢʀᴏᴜᴘ•"url=f"https://t.me/LOOVE_BIRDS_123"
+                    )
             ]
         ),
     )
