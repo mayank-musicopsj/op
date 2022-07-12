@@ -24,7 +24,7 @@ async def start_(client: Client, message: Message):
 ┗━━━━━━━━━━━━━━┛
 
 💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴀʙᴏᴜᴛ ᴍᴇ ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ_xᴅ](t.me/BANNA_XD) ʙᴀʙʏ...
-━━━━━━━━━━━━━━━━━━**""",)
+━━━━━━━━━━━━━━━━━━**""",
     reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -37,20 +37,20 @@ async def start_(client: Client, message: Message):
                        ),
                     InlineKeyboardButton(
                         "•sᴜᴘᴘᴏʀᴛ•", url=f"https://t.me/AARU_SUPPORT"
-                       )
+                       ),
                 ],[
                     InlineKeyboardButton(
                         "•ᴄʜᴀɴɴᴇʟ•", url="https://t.me/MISS_AARU_143"
                        ),
                     InlineKeyboardButton(
                         "•ᴅᴇᴠᴇʟᴏᴘᴇʀ•", url="https://t.me/BANNA_XD"
-                       )
+                       ),
                 ],[
                     InlineKeyboardButton(
                         " •ɢʀᴏᴜᴘ•", url="https//t.me/LOVE_BIRDS_123"
-                       )
+                       ),
                 ]        
              ]
-       )
-
+       ),
+  )
 
