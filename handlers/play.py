@@ -212,7 +212,7 @@ async def play(_, message: Message):
                 [
                     [
                            InlineKeyboardButton(
-                              text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/MISS_AARU_143"
+                              text="•ᴄʜᴀɴɴᴇʟ•", url=f"https://t.me/MISS_AARU_143"
                            ),
                            InlineKeyboardButton(text="•sᴜᴘᴘᴏʀᴛ•", url=f"https://t.me/love_birds_group"),
                     ],[
@@ -234,15 +234,15 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/MISS_AARU_143"
+                            text="•ᴄʜᴀɴɴᴇʟ•", url=f"https://t.me/MISS_AARU_143"
                         ),
                         InlineKeyboardButton(text="•sᴜᴘᴘᴏʀᴛ•", url=f"https://t.me/love_birds_group"),
                    ],[    
                         InlineKeyboardButton(
-                            text="•ᴏᴡɴᴇʀ", url=f"https://t.me/BANNA_XD"
+                            text="•ᴏᴡɴᴇʀ•", url=f"https://t.me/BANNA_XD"
                         ),
                         InlineKeyboardButton(
-                           text="•ɢʀᴏᴜᴘ•," url=f"https://t.me/LOVE_BIRDS_123"
+                           text="•ɢʀᴏᴜᴘ•", url=f"https://t.me/LOVE_BIRDS_123"
                         ),
                     ]
                 ]
@@ -296,10 +296,10 @@ async def play(_, message: Message):
                     InlineKeyboardButton(text="•sᴜᴘᴘᴏʀᴛ•", url=f"https://t.me/AARU_SUPPORT"),
                ],[
                     InlineKeyboardButton(
-                       text="•ᴏᴡɴᴇʀ", url=f"https://t.me/BANNA_XD"
+                       text="•ᴏᴡɴᴇʀ•", url=f"https://t.me/BANNA_XD"
                     ),
                     InlineKeyboardButton(
-                       text="•ɢʀᴏᴜᴘ•," url=f"https://t.me/LOVE_BIRDS_123"
+                       text="•ɢʀᴏᴜᴘ•", url=f"https://t.me/LOVE_BIRDS_123"
                     ),
                 ]
             ]
