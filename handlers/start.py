@@ -9,7 +9,6 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 @Client.on_message(command("start") & filters.private & ~filters.group & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.delete()
-    await message.reply_sticker()
     await message.reply_photo(
         photo=f"https://telegra.ph/file/336544dbebf58dadb1e6f.jpg",
         caption=f"""**━━━━━━━━━━━━━━━━━━
@@ -48,7 +47,7 @@ async def start_(client: Client, message: Message):
                        )
                 ],[
                     InlineKeyboardButton(
-                        " •ɢʀᴏᴜᴘ• ",url="https//t.me/LOVE_BIRDS_123"
+                        " •ɢʀᴏᴜᴘ•", url="https//t.me/LOVE_BIRDS_123"
                        )
                 ]        
              ]
