@@ -29,7 +29,7 @@ async def start_(client: Client, message: Message):
                 [
                     InlineKeyboardButton(
                         "•ᴀᴅᴅ ᴍᴇ ᴍʀᴇɪ ᴊᴀᴀɴ​•", url=f"https://t.me/{bu}?startgroup=true"
-                       ),
+                       )
                 ],[
                     InlineKeyboardButton(
                         "•sᴏᴜʀᴄᴇ•", url=f"https://github.com/BANNA-XD143/Aaru_Music"
@@ -49,7 +49,7 @@ async def start_(client: Client, message: Message):
                         " •ɢʀᴏᴜᴘ•", url="https//t.me/LOVE_BIRDS_123"
                        )
                 ]        
-             ]
+           ]
        ),
     )
 
