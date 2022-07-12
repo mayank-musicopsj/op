@@ -48,7 +48,7 @@ async def start_(client: Client, message: Message):
                        )
                 ],[
                     InlineKeyboardButton(
-                        " •ɢʀᴏᴜᴘ• ",url="https//t.me/LOVE_BIRDS_123
+                        " •ɢʀᴏᴜᴘ• ",url="https//t.me/LOVE_BIRDS_123"
                        )
                 ]        
              ]
