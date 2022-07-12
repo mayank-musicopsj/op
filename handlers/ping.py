@@ -64,14 +64,14 @@ async def help(client: Client, message: Message):
                     ),
                     InlineKeyboardButton(
                         "•sᴏᴜʀᴄᴇ•", url="https://github.com/BANNA-XD143/Aaru_Music"
-                    )
+                    ),
                 ],[
                     InlineKeyboardButton(
                         "•ᴏᴡɴᴇʀ•", url=f"https://t.me/BANNA_XD"
                     ),
                     InlineKeyboardButton(
                         "•ɢʀᴏᴜᴘ•" url=f"https://t.me/LOVE_BIRDS_123"
-                    )
+                    ),
                   ]
             ]
         ),
