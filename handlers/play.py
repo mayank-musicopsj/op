@@ -14,7 +14,7 @@ import converter
 from datetime import datetime
 from time import time
 from downloaders import youtube
-from config import DURATION_LIMIT, SUPPORT_GROUP, OWNER_USERNAME, PING_IMG, BOT_NAME as bn 
+from config import DURATION_LIMIT, SUPPORT_GROUP, OWNER_USERNAME, PING_IMG, BOT_NAME 
 from helpers.filters import command
 from helpers.decorators import errors
 from helpers.errors import DurationLimitError
@@ -125,20 +125,20 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "**{bn} ᴀssɪsᴛᴀɴᴛ ᴊᴏɪɴ ɢʀᴏᴜᴘ ғᴏʀ ᴘʟᴀʏ ᴍᴜsɪᴄ**"
+                        message.chat.id, "**{BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴊᴏɪɴ ɢʀᴏᴜᴘ ғᴏʀ ᴘʟᴀʏ ᴍᴜsɪᴄ**"
                     )
 
                 except UserAlreadyParticipant:
                     pass
                 except Exception:
                     await lel.edit(
-                        f"<b>❰ғʟᴏᴏᴅ 😒 ᴡᴀɪᴛ ᴇʀʀᴏʀ 😔❱</b>\nʜᴇʏ ᴀᴀʀᴜ ᴀssɪsᴛᴀɴᴛ ᴜsᴇʀʙᴏᴛ ᴄᴏᴜʟᴅɴ'ᴛ ᴊᴏɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴅᴜᴇ ᴛᴏ ʜᴇᴀᴠʏ ᴊᴏɪɴ ʀᴇǫᴜᴇsᴛ . ᴍᴀᴋᴇ sᴜʀᴇ ᴜsᴇʀʙᴏᴛ ɪᴅ ɴᴏᴛ ʙᴀɴɴᴇᴅ 😔 ɪɴ ɢʀᴏᴜᴘ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ 😎🤟ʟᴀᴛᴇʀ :) "
+                        f"<b>❰ғʟᴏᴏᴅ 😒 ᴡᴀɪᴛ ᴇʀʀᴏʀ 😔❱</b>\nʜᴇʏ {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴜsᴇʀʙᴏᴛ ᴄᴏᴜʟᴅɴ'ᴛ ᴊᴏɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴅᴜᴇ ᴛᴏ ʜᴇᴀᴠʏ ᴊᴏɪɴ ʀᴇǫᴜᴇsᴛ . ᴍᴀᴋᴇ sᴜʀᴇ ᴜsᴇʀʙᴏᴛ ɪᴅ ɴᴏᴛ ʙᴀɴɴᴇᴅ 😔 ɪɴ ɢʀᴏᴜᴘ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ 😎🤟ʟᴀᴛᴇʀ :) "
                     )
     try:
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"<i>{bn} ᴀssɪsᴛᴀɴᴛ ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ɪɴ ᴛʜɪs ᴄʜᴀᴛ' ᴀsᴋ ᴀᴅᴍɪɴ ᴛᴏ sᴇɴᴅ /ᴊᴏɪɴ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀ ғɪʀsᴛ ᴛɪᴍᴇ ᴛᴏ ᴀᴅᴅ ɪᴛ 😎🤟</i>"
+            f"<i>{BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴜsᴇʀʙᴏᴛ ɪs ɴᴏᴛ ɪɴ ᴛʜɪs ᴄʜᴀᴛ' ᴀsᴋ ᴀᴅᴍɪɴ ᴛᴏ sᴇɴᴅ /ᴊᴏɪɴ ᴄᴏᴍᴍᴀɴᴅ ғᴏʀ ғɪʀsᴛ ᴛɪᴍᴇ ᴛᴏ ᴀᴅᴅ ɪᴛ 😎🤟</i>"
         )
         return
 
