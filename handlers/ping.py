@@ -50,7 +50,7 @@ async def help(client: Client, message: Message):
     end = datetime.now()
     resp = (end - start).microseconds / 1000
     rahul = await message.reply_photo(
-        photo=f"https://telegra.ph/file/108d62f906d2a85101b6b.jpg",
+        photo=f"{PING_IMG}",
         caption="🥀 ᴩɪɴɢɪɴɢ... 🥀",
     )
     await rahul.edit_text(
@@ -59,17 +59,17 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "•★sᴜᴘᴘᴏʀᴛ★•", url=f"https://t.me/AARU_SUPPORT"
+                        "•★sᴜᴘᴘᴏʀᴛ★•", url=f"https://t.me/Best_FriendsFor_Ever"
                     ),
                     InlineKeyboardButton(
-                        "•✰sᴏᴜʀᴄᴇ✰•", url="https://github.com/BANNA-XD143/Aaru_Music"
+                        "•✰sᴏᴜʀᴄᴇ✰•", url="https://github.com/Starboihacks369/star-music"
                     )
                 ],[
                     InlineKeyboardButton(
-                        "•✯ᴏᴡɴᴇʀ✯•", url=f"https://t.me/BANNA_XD"
+                        "•✯ᴏᴡɴᴇʀ✯•", url=f"https://t.me/{OWNER_USERNAME}"
                     ),
                     InlineKeyboardButton(
-                        "•✵ɢʀᴏᴜᴘ✵•", url=f"https://t.me/LOVE_BIRDS_123"
+                        "•✵ɢʀᴏᴜᴘ✵•", url=f"https://t.me/{SUPPORT_GROUP}"
                     )
                   ]
             ]
