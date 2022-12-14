@@ -166,7 +166,7 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="•★ᴄʜᴀɴɴᴇʟ★•", url=f"https://t.me/its_star_network"
+                        text="•★ᴄʜᴀɴɴᴇʟ★•", url=f"https://t.me/star_x_network"
                     ),
                     InlineKeyboardButton(text="🥀sᴜᴘᴘᴏʀᴛ🥀", url=f"https://t.me/Best_FriendsFor_Ever")
                  ]   
@@ -205,7 +205,7 @@ async def play(_, message: Message):
                 [
                     [
                            InlineKeyboardButton(
-                        text="•★ᴄʜᴀɴɴᴇʟ★•", url=f"https://t.me/its_star_network"
+                        text="•★ᴄʜᴀɴɴᴇʟ★•", url=f"https://t.me/star_x_network"
                     ),
                     InlineKeyboardButton(text="•🥀sᴜᴘᴘᴏʀᴛ•🥀", url=f"https://t.me/Best_FriendsFor_Ever"
                           ),
@@ -221,7 +221,7 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                        text="•★ᴄʜᴀɴɴᴇʟ★•", url=f"https://t.me/its_star_network"
+                        text="•★ᴄʜᴀɴɴᴇʟ★•", url=f"https://t.me/star_x_network"
                     ),
                     InlineKeyboardButton(text="•🥀sᴜᴘᴘᴏʀᴛ•🥀", url=f"https://t.me/Best_FriendsFor_Ever" )
                     ]
@@ -271,7 +271,7 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="•★ᴄʜᴀɴɴᴇʟ★•", url=f"https://t.me/its_star_network"
+                        text="•★ᴄʜᴀɴɴᴇʟ★•", url=f"https://t.me/star_x_network"
                     ),
                     InlineKeyboardButton(text="•🥀sᴜᴘᴘᴏʀᴛ•🥀", url=f"https://t.me/Best_FriendsFor_Ever" )
                 ]
